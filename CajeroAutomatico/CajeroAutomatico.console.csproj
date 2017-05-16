@@ -48,5 +48,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CajeroAutomatico.Entities\CajeroAutomatico.Entities.csproj">
+      <Project>{808a38a8-8c0b-4dd6-b8e6-1fc1beff1040}</Project>
+      <Name>CajeroAutomatico.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CajeroAutomatico.Persistence\CajeroAutomatico.Persistence.csproj">
+      <Project>{ee60d15d-3b12-4021-9513-2fbfa0ee1259}</Project>
+      <Name>CajeroAutomatico.Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
