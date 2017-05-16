@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace CajeroAutomatico.Entities
 {
-    public class Teclado
+    public class ATM
     {
-        public int TecladoId { get; set; }
-
-        public int Contraseña { get; set; }
+        public int ATMId { get; set; }
     }
 }

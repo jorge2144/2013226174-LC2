@@ -9,6 +9,7 @@ namespace CajeroAutomatico.Entities
     public class Retiro
     {
         public int RetiroId { get; set; }
+
         public int Cantidad { get; set; }
     }
 }
