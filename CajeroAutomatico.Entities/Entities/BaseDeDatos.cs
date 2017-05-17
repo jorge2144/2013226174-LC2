@@ -9,6 +9,24 @@ namespace CajeroAutomatico.Entities
     public class BaseDeDatos
     {
         public int BaseDeDatosId { get; set; }
+        // Cuentas
+        public Cuenta Cuenta { get; set; }
+        public int CuentaId { get; set; }
+        public List<Cuenta> Cuentas;
+
+        public BaseDeDatos()
+        {
+            Cuentas=new List<Cuenta>();
+        }
+
+        //Retiro
+        public Retiro Retiro { get; set; }
+        public int RetiroId { get; set; }
+
+        //ATM
+        public ATM ATM { get; set; }
+        public int ATMId { get; set; }
+
 
         public bool AutentificarUsuario(int NumeroDeCuenta, int Pin)
         {

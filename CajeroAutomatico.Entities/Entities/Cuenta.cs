@@ -15,5 +15,11 @@ namespace CajeroAutomatico.Entities
         public int Pin { get; set; }
 
         public double Monto { get; set; }
+
+        //BaseDeDatos
+        public BaseDeDatos BaseDeDatos { get; set; }
+        public int BaseDeDatosId { get; set; }
+
+
     }
 }
