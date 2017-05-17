@@ -10,5 +10,11 @@ namespace CajeroAutomatico.Persistence.EntitiesConfiguration
 {
     public class CuentaConfiguration : EntityTypeConfiguration<Cuenta>
     {
+        public CuentaConfiguration()
+        {
+            //table configuration
+            ToTable("Cuenta");
+            HasKey(c => c.CuentaId);
+        }
     }
 }

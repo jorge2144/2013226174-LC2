@@ -25,6 +25,20 @@ namespace CajeroAutomatico.Persistence.EntitiesConfiguration
             HasRequired(c => c.Pantalla)
                 .WithRequiredPrincipal(c => c.ATM);
 
+            //DispensadorEfectivo
+            HasRequired(c => c.DispensadorEfectivo)
+                .WithRequiredPrincipal(c => c.ATM);
+
+            //Retiro
+            HasOptional(c => c.Retiro)
+                .WithRequired(c => c.ATM);
+            //Base de datos
+            HasRequired(c => c.BaseDeDatos)
+                .WithRequiredPrincipal(c => c.ATM);
+            //RanuraDeposito
+            HasRequired(c => c.DispensadorEfectivo)
+                .WithRequiredPrincipal(c => c.ATM);
+
         }
     }
 }

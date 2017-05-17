@@ -10,5 +10,15 @@ namespace CajeroAutomatico.Persistence.EntitiesConfiguration
 {
     class DispensadorEfectivoConfiguration : EntityTypeConfiguration<DispensadorEfectivo>
     {
+        public DispensadorEfectivoConfiguration()
+        {
+            //TAble configuration
+            ToTable("Dispensador efectivo");
+            HasKey(c => c.DispensadorEfectivoId);
+
+            //Retiro
+            HasOptional(c => c.Retiro)
+                .WithRequired(c => c.DispensadorEfectivo);
+        }
     }
 }

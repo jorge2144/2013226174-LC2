@@ -19,7 +19,7 @@ namespace CajeroAutomatico.Entities
         public int RetiroId { get; set; }
 
         //ATM
-        public ATM ATM{ get; set; }
+        public ATM ATM { get; set; }
         public int ATMId { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace CajeroAutomatico.Entities
     {
         public int RetiroId { get; set; }
 
-        public int Cantidad { get; set; }
+        
 
         //DispensadorDeEfectivo
         public int DispensadorEfectivoId { get; set; }
@@ -27,6 +27,10 @@ namespace CajeroAutomatico.Entities
         //BaseDeDatos
         public int BaseDeDatosId { get; set; }
         public BaseDeDatos BaseDeDatos { get; set; }
+
+        //Teclado
+        public int TecladoId { get; set; }
+        public Teclado Teclado { get; set; }
 
     }
 }

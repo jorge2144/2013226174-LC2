@@ -27,5 +27,14 @@ namespace CajeroAutomatico.Entities
         public BaseDeDatos BaseDeDatos { get; set; }
         public int BaseDeDatosId { get; set; }
 
+        //DispensadorEfectivo
+        public int DispensadorEfectivoId { get; set; }
+        public DispensadorEfectivo DispensadorEfectivo { get; set; }
+
+        //Retiro
+        public int RetiroId { get; set; }
+        public Retiro Retiro { get; set; }
+        
+
     }
 }

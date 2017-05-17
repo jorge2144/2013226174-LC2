@@ -10,5 +10,12 @@ namespace CajeroAutomatico.Persistence.EntitiesConfiguration
 {
     class RanuraDepositoConfiguration : EntityTypeConfiguration<RanuraDeposito>
     {
+        public RanuraDepositoConfiguration()
+        {
+            //TAble configuration
+            ToTable("Ranura Deposito");
+            HasKey(c => c.RanuraDepositoId);
+;
+        }
     }
 }

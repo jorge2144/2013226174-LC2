@@ -10,5 +10,12 @@ namespace CajeroAutomatico.Persistence.EntitiesConfiguration
 {
     class RetiroConfiguration : EntityTypeConfiguration<Retiro>
     {
+        public RetiroConfiguration()
+        {
+            //table configuration
+            ToTable("Retiro");
+            HasKey(c => c.RetiroId);
+
+        }
     }
 }

@@ -14,6 +14,8 @@ namespace CajeroAutomatico.Entities
         //ATM
         public ATM ATM { get; set; }
         public int ATMId { get; set; }
+        
+
 
     }
 }

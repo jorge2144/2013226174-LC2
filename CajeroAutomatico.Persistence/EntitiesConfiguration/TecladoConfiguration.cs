@@ -15,6 +15,11 @@ namespace CajeroAutomatico.Persistence.EntitiesConfiguration
             //TableConfiguration
             ToTable("Teclado");
             HasKey(c => c.TecladoId);
+
+
+            //Retiro
+            HasOptional(c => c.Retiro)
+                .WithRequired(c => c.Teclado);
         }
     }
 }
