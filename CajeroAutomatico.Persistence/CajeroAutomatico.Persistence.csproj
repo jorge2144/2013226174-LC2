@@ -48,6 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EntitiesConfiguration\ATMConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\BaseDeDatosConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\CuentaConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\DispensadorEfectivoConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\PantallaConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\RanuraDepositoConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\RetiroConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\TecladoConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,8 +68,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EntitiesConfiguration\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
