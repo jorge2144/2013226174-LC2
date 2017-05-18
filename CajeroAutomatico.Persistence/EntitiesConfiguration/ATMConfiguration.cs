@@ -36,7 +36,7 @@ namespace CajeroAutomatico.Persistence.EntitiesConfiguration
             HasRequired(c => c.BaseDeDatos)
                 .WithRequiredPrincipal(c => c.ATM);
             //RanuraDeposito
-            HasRequired(c => c.DispensadorEfectivo)
+            HasRequired(c => c.RanuraDeposito)
                 .WithRequiredPrincipal(c => c.ATM);
 
         }

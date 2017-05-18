@@ -9,12 +9,11 @@ namespace CajeroAutomatico.Entities
     public class RanuraDeposito
     {
         public int RanuraDepositoId { get; set; }
-        public double Deposito { get; set; }
 
         //ATM
         public ATM ATM { get; set; }
         public int ATMId { get; set; }
-        
+
 
 
     }

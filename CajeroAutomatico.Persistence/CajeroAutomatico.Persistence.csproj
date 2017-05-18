@@ -56,6 +56,10 @@
     <Compile Include="EntitiesConfiguration\RanuraDepositoConfiguration.cs" />
     <Compile Include="EntitiesConfiguration\RetiroConfiguration.cs" />
     <Compile Include="EntitiesConfiguration\TecladoConfiguration.cs" />
+    <Compile Include="Migrations\201705180440508_InitialModel.cs" />
+    <Compile Include="Migrations\201705180440508_InitialModel.Designer.cs">
+      <DependentUpon>201705180440508_InitialModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ATMRepository.cs" />
@@ -79,6 +83,10 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705180440508_InitialModel.resx">
+      <DependentUpon>201705180440508_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
