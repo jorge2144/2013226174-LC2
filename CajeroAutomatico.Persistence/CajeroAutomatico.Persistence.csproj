@@ -56,6 +56,7 @@
     <Compile Include="EntitiesConfiguration\RanuraDepositoConfiguration.cs" />
     <Compile Include="EntitiesConfiguration\RetiroConfiguration.cs" />
     <Compile Include="EntitiesConfiguration\TecladoConfiguration.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ATMRepository.cs" />
     <Compile Include="Repositories\BaseDeDatosRepository.cs" />

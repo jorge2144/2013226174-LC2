@@ -10,7 +10,7 @@ namespace CajeroAutomatico.Persistence.EntitiesConfiguration
 {
     class PantallaConfiguration : EntityTypeConfiguration<Pantalla>
     {
-        PantallaConfiguration()
+        public PantallaConfiguration()
         {
             //Table configuration
             ToTable("Pantalla");
