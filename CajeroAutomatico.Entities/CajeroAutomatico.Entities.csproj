@@ -47,6 +47,16 @@
     <Compile Include="Entities\Pantalla.cs" />
     <Compile Include="Entities\RanuraDeposito.cs" />
     <Compile Include="Entities\Retiro.cs" />
+    <Compile Include="IRepositories\IATMRepository.cs" />
+    <Compile Include="IRepositories\IBaseDeDatosRepository.cs" />
+    <Compile Include="IRepositories\ICuentaRepository.cs" />
+    <Compile Include="IRepositories\IDispensadorEfectivoRepository.cs" />
+    <Compile Include="IRepositories\IPantallaRepository.cs" />
+    <Compile Include="IRepositories\IRanuraDepositoRepository.cs" />
+    <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="IRepositories\IRetiroRepository.cs" />
+    <Compile Include="IRepositories\ITecladoRepository.cs" />
+    <Compile Include="IRepositories\IUnityOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Teclado.cs" />
   </ItemGroup>

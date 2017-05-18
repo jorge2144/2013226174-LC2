@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CajeroAutomatico.Persistence
+namespace CajeroAutomatico.Entities.IRepositories
 {
-    public class Class1
+    public interface ICuentaRepository : IRepository <Cuenta>
     {
     }
 }
