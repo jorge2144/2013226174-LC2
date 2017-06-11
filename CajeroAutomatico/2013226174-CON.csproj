@@ -49,13 +49,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CajeroAutomatico.Entities\CajeroAutomatico.Entities.csproj">
+    <ProjectReference Include="..\CajeroAutomatico.Entities\2013226174-ENT.csproj">
       <Project>{808a38a8-8c0b-4dd6-b8e6-1fc1beff1040}</Project>
-      <Name>CajeroAutomatico.Entities</Name>
+      <Name>2013226174-ENT</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CajeroAutomatico.Persistence\CajeroAutomatico.Persistence.csproj">
+    <ProjectReference Include="..\CajeroAutomatico.Persistence\2013226174-PER.csproj">
       <Project>{ee60d15d-3b12-4021-9513-2fbfa0ee1259}</Project>
-      <Name>CajeroAutomatico.Persistence</Name>
+      <Name>2013226174-PER</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

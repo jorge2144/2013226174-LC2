@@ -65,9 +65,9 @@
     <Compile Include="Repositories\UnityOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CajeroAutomatico.Entities\CajeroAutomatico.Entities.csproj">
+    <ProjectReference Include="..\CajeroAutomatico.Entities\2013226174-ENT.csproj">
       <Project>{808a38a8-8c0b-4dd6-b8e6-1fc1beff1040}</Project>
-      <Name>CajeroAutomatico.Entities</Name>
+      <Name>2013226174-ENT</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
