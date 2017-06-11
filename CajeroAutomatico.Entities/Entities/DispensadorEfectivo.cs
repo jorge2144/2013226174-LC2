@@ -1,25 +1,36 @@
-﻿using System;
+﻿using CajeroAutomatico.Entities.Entities;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CajeroAutomatico.Entities
 {
+    [Table("DispensadorEfectivos")]
     public class DispensadorEfectivo
     {
-        public int DispensadorEfectivoId { get; set; }
+        [Key]
+        public int dispensadorEfectivoId { get; set; }
 
-        //ATM
-        public int ATMId { get; set; }
-        public ATM ATM { get; set; }
 
-        //Retiro
-        public int RetiroId { get; set; }
-        public Retiro Retiro {get; set; }
+        [Required, MaxLength(100)]
+        public String ubicacion { get; set; }
 
-        
 
-        
+        [Required]
+        public int dineroTotal { get; set; }
+
+
+        [Required]
+        public int estadoDispensadorId { get; set; }
+
+        [ForeignKey("estadoDispensadorId")]
+        public EstadoDispensador EstadoDispensador { get; set; }
+
+
+
     }
 }

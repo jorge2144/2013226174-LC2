@@ -1,25 +1,45 @@
-﻿using System;
+﻿using CajeroAutomatico.Entities.Entities;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CajeroAutomatico.Entities
 {
+    [Table("Cuentas")]
     public class Cuenta
     {
-        public int CuentaId { get; set; }
+        [Key]
+        public int cuentaId { get; set; }
 
-        public int NumCuenta { get; set; }
 
-        public int Pin { get; set; }
+        [Required, DisplayName("Número de Cuenta")]
+        public int numeroCuenta { get; set; }
 
-        public double Monto { get; set; }
+        [Required, MaxLength(20), DisplayName("Núm. Tarjeta")]
+        public String numTarjeta { get; set; }
 
-        //BaseDeDatos
-        public BaseDeDatos BaseDeDatos { get; set; }
-        public int BaseDeDatosId { get; set; }
 
+        [Required, DisplayName("Código Pin")]
+        public int pin { get; set; }
+
+        [DisplayName("Saldo Disponible")]
+        public decimal saldoDisponible { get; set; }
+
+        [Required]
+        public int tipoCuentaId { get; set; }
+
+        [ForeignKey("tipoCuentaId")]
+        public TipoCuenta TipoCuenta { get; set; }
+
+        [Required]
+        public int clienteId { get; set; }
+        [ForeignKey("clienteId")]
+        public Cliente Cliente { get; set; }
 
     }
 }

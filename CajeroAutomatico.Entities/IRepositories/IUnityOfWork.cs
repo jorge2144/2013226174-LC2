@@ -10,16 +10,20 @@ namespace CajeroAutomatico.Entities.IRepositories
     public interface IUnityOfWork :IDisposable
     {
 
-        IATMRepository ATM { get; }
-        IBaseDeDatosRepository BaseDeDatos { get; }
-        ICuentaRepository Cuenta { get; }
-        IDispensadorEfectivoRepository DispensadorEfectivo { get; }
-        IPantallaRepository Pantalla { get; }
-        IRanuraDepositoRepository RanuraDeposito { get; }
-        IRetiroRepository Retiro { get; }
-        ITecladoRepository Teclado { get; }
+        IAtmRepository Atm { get; }
+        IClienteRepository Clientes { get; }
+        ICuentaRepository Cuentas { get; }
+        IDispensadorEfectivoRepository DispensadorEfectivos { get; }
+        IEstadoDispensadorRepository EstadoDispensadores { get; }
+        IRetiroRepository Retiros { get; }
+        ITipoCuentaRepository TipoCuentas { get; }
 
-        int SaveChanges();
 
-    }
+
+    //Método que guardará los cambios en la base de datos.
+    int SaveChanges();
+
+    void StateModified(object Entity);
+
+}
 }

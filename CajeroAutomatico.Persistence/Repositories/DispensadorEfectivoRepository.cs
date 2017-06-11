@@ -10,15 +10,14 @@ namespace CajeroAutomatico.Persistence.Repositories
 {
     public class DispensadorEfectivoRepository : Repository<DispensadorEfectivo>, IDispensadorEfectivoRepository
     {
-        private readonly CajeroAutomaticoContext _context;
 
-        public DispensadorEfectivoRepository(CajeroAutomaticoContext context)
-        {
-            _context = context;
-        }
-        private DispensadorEfectivoRepository()
+
+        public DispensadorEfectivoRepository(CajeroAutomaticoDBContext context) : base(context)
         {
 
+
         }
+
+
     }
 }

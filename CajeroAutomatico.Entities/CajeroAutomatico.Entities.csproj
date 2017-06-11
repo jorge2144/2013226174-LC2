@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,21 +42,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\ATM.cs" />
-    <Compile Include="Entities\BaseDeDatos.cs" />
+    <Compile Include="Entities\BaseDatos.cs" />
+    <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Cuenta.cs" />
     <Compile Include="Entities\DispensadorEfectivo.cs" />
+    <Compile Include="Entities\EstadoDispensador.cs" />
     <Compile Include="Entities\Pantalla.cs" />
     <Compile Include="Entities\RanuraDeposito.cs" />
     <Compile Include="Entities\Retiro.cs" />
-    <Compile Include="IRepositories\IATMRepository.cs" />
-    <Compile Include="IRepositories\IBaseDeDatosRepository.cs" />
+    <Compile Include="Entities\TipoCuenta.cs" />
+    <Compile Include="IRepositories\IAtmRepository.cs" />
+    <Compile Include="IRepositories\IClienteRepository.cs" />
     <Compile Include="IRepositories\ICuentaRepository.cs" />
     <Compile Include="IRepositories\IDispensadorEfectivoRepository.cs" />
-    <Compile Include="IRepositories\IPantallaRepository.cs" />
-    <Compile Include="IRepositories\IRanuraDepositoRepository.cs" />
+    <Compile Include="IRepositories\IEstadoDispensadorRepository.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="IRepositories\IRetiroRepository.cs" />
-    <Compile Include="IRepositories\ITecladoRepository.cs" />
+    <Compile Include="IRepositories\ITipoCuentaRepository.cs" />
     <Compile Include="IRepositories\IUnityOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Teclado.cs" />

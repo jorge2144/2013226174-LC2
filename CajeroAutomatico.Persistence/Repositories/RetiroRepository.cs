@@ -10,15 +10,14 @@ namespace CajeroAutomatico.Persistence.Repositories
 {
     public class RetiroRepository : Repository<Retiro>, IRetiroRepository
     {
-        private readonly CajeroAutomaticoContext _context;
 
-        public RetiroRepository(CajeroAutomaticoContext context)
+        public RetiroRepository(CajeroAutomaticoDBContext context) : base(context)
         {
-            _context = context;
+
         }
-        private RetiroRepository()
+        public IEnumerable<Cuenta> GetDinero(int idCuenta)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

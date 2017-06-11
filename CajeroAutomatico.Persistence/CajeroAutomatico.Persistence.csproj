@@ -47,30 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CajeroAutomaticoContext.cs" />
-    <Compile Include="EntitiesConfiguration\ATMConfiguration.cs" />
-    <Compile Include="EntitiesConfiguration\BaseDeDatosConfiguration.cs" />
-    <Compile Include="EntitiesConfiguration\CuentaConfiguration.cs" />
-    <Compile Include="EntitiesConfiguration\DispensadorEfectivoConfiguration.cs" />
-    <Compile Include="EntitiesConfiguration\PantallaConfiguration.cs" />
-    <Compile Include="EntitiesConfiguration\RanuraDepositoConfiguration.cs" />
-    <Compile Include="EntitiesConfiguration\RetiroConfiguration.cs" />
-    <Compile Include="EntitiesConfiguration\TecladoConfiguration.cs" />
-    <Compile Include="Migrations\201705180440508_InitialModel.cs" />
-    <Compile Include="Migrations\201705180440508_InitialModel.Designer.cs">
-      <DependentUpon>201705180440508_InitialModel.cs</DependentUpon>
+    <Compile Include="CajeroAutomaticoDBContext.cs" />
+    <Compile Include="Migrations\201706110401395_InitialModel.cs" />
+    <Compile Include="Migrations\201706110401395_InitialModel.Designer.cs">
+      <DependentUpon>201706110401395_InitialModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ATMRepository.cs" />
-    <Compile Include="Repositories\BaseDeDatosRepository.cs" />
+    <Compile Include="Repositories\AtmRepository.cs" />
+    <Compile Include="Repositories\ClienteRepository.cs" />
     <Compile Include="Repositories\CuentaRepository.cs" />
     <Compile Include="Repositories\DispensadorEfectivoRepository.cs" />
-    <Compile Include="Repositories\PantallaRepository.cs" />
-    <Compile Include="Repositories\RanuraDepositoRepository.cs" />
+    <Compile Include="Repositories\EstadoDispensadorRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\RetiroRepository.cs" />
-    <Compile Include="Repositories\TecladoRepository.cs" />
+    <Compile Include="Repositories\TipoCuentaRepository.cs" />
     <Compile Include="Repositories\UnityOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,12 +71,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705180440508_InitialModel.resx">
-      <DependentUpon>201705180440508_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706110401395_InitialModel.resx">
+      <DependentUpon>201706110401395_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

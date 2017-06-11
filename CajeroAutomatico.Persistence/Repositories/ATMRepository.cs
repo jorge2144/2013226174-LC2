@@ -8,17 +8,11 @@ using System.Threading.Tasks;
 
 namespace CajeroAutomatico.Persistence.Repositories
 {
-    public class ATMRepository : Repository<ATM>, IATMRepository
+    public class AtmRepository : Repository<ATM>, IAtmRepository
     {
-        private CajeroAutomaticoContext _context;
-
-        private ATMRepository()
+        public AtmRepository(CajeroAutomaticoDBContext context) : base(context)
         {
 
-        }
-        public ATMRepository(CajeroAutomaticoContext context)
-        {
-            _context = context;
         }
     }
 }

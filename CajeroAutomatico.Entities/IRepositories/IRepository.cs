@@ -23,7 +23,7 @@ namespace CajeroAutomatico.Entities.IRepositories
         void UpdateRange(IEnumerable<TEntity> entities);
 
         //DELETES
-        void Remove(TEntity entity);
-        void RemoveRange(IEnumerable<TEntity> entities);
+        void Delete(TEntity entity);
+        void DeleteRange(IEnumerable<TEntity> entities);
     }
 }

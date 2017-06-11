@@ -8,5 +8,6 @@ namespace CajeroAutomatico.Entities.IRepositories
 {
     public interface IRetiroRepository : IRepository <Retiro>
     {
+        IEnumerable<Cuenta> GetDinero(int idCuenta);
     }
 }

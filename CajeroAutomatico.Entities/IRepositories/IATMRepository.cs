@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CajeroAutomatico.Entities.IRepositories
 {
-    public interface IATMRepository : IRepository<ATM>
+    public interface IAtmRepository : IRepository<ATM>
     {
 
     }
