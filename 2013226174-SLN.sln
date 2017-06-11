@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2013226174-PER", "CajeroAut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2013226174-MVC", "2013226174-MVC\2013226174-MVC.csproj", "{5FD24929-EBC1-4D5F-9FE1-4FB320E52BF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2013226174-API", "WebApplication1\2013226174-API.csproj", "{81E9FB5F-F60D-44F4-BB79-3CC220591134}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5FD24929-EBC1-4D5F-9FE1-4FB320E52BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FD24929-EBC1-4D5F-9FE1-4FB320E52BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FD24929-EBC1-4D5F-9FE1-4FB320E52BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E9FB5F-F60D-44F4-BB79-3CC220591134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E9FB5F-F60D-44F4-BB79-3CC220591134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E9FB5F-F60D-44F4-BB79-3CC220591134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E9FB5F-F60D-44F4-BB79-3CC220591134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
